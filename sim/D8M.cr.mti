@@ -1,0 +1,43 @@
+/home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/DPRAM.sv {1 {vlog -work work -sv -stats=none /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/DPRAM.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DPRAM
+
+Top level modules:
+	DPRAM
+
+} {} {}} /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/IMAGE_PROCESSING_TB.sv {1 {vlog -work work -sv -stats=none /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/IMAGE_PROCESSING_TB.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module IMAGE_PROCESSING_TB
+
+Top level modules:
+	IMAGE_PROCESSING_TB
+
+} {} {}} /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/SOBEL.sv {1 {vlog -work work -sv -stats=none /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/SOBEL.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SOBEL
+
+Top level modules:
+	SOBEL
+
+} {} {}} /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/THRESHOLD.sv {1 {vlog -work work -sv -stats=none /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/THRESHOLD.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module THRESHOLD
+
+Top level modules:
+	THRESHOLD
+
+} {} {}} /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/HYSTERESIS.sv {1 {vlog -work work -sv -stats=none /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/HYSTERESIS.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module HYSTERESIS
+
+Top level modules:
+	HYSTERESIS
+
+} {} {}} /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/GAUSS.sv {1 {vlog -work work -sv -stats=none /home/jb/Documents/Electronique/DE10-Standard/D8M/DE10_Standard_D8M_RTL_card_identification_v1_2021_11_07/src/GAUSS.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module GAUSS
+
+Top level modules:
+	GAUSS
+
+} {} {}}

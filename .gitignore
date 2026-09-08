@@ -1,0 +1,53 @@
+# Quartus generated directories
+/src/db/
+/src/incremental_db/
+/src/output_files/
+/src/simulation/
+/src/greybox_tmp/
+/src/qdb/
+/fit/
+/src/work/
+/src/.qsys_edit/
+/.qsys_edit/
+
+# Quartus generated files
+*.rpt
+*.summary
+*.smsg
+*.chg
+*.eqn
+*.pin
+*.sof
+*.pof
+*.jic
+*.rbf
+*.cdf
+*.done
+*.qws
+*.bak
+*.orig
+
+# Compilation / temporary files
+*.log
+*.tmp
+*.temp
+*.cache
+*.lock
+
+# Simulation
+*.wlf
+*.vcd
+*.vwf
+*.do
+transcript
+vsim.wlf
+work/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

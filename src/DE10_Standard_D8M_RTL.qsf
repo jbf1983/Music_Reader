@@ -1,0 +1,1294 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY "DE10_Standard_D8M_RTL"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.0.0
+set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Standard Edition"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:58:32 DECEMBER 30,2016"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+#============================================================
+# CLOCK
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50
+set_instance_assignment -name IO_STANDARD "2.5 V" -to CLOCK3_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK4_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+set_location_assignment PIN_AA16 -to CLOCK2_50
+set_location_assignment PIN_Y26 -to CLOCK3_50
+set_location_assignment PIN_K14 -to CLOCK4_50
+set_location_assignment PIN_AF14 -to CLOCK_50
+
+#============================================================
+# KEY
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[3]
+set_location_assignment PIN_AJ4 -to KEY[0]
+set_location_assignment PIN_AK4 -to KEY[1]
+set_location_assignment PIN_AA14 -to KEY[2]
+set_location_assignment PIN_AA15 -to KEY[3]
+
+#============================================================
+# SW
+#============================================================
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SW[9]
+set_location_assignment PIN_AB30 -to SW[0]
+set_location_assignment PIN_Y27 -to SW[1]
+set_location_assignment PIN_AB28 -to SW[2]
+set_location_assignment PIN_AC30 -to SW[3]
+set_location_assignment PIN_W25 -to SW[4]
+set_location_assignment PIN_V25 -to SW[5]
+set_location_assignment PIN_AC28 -to SW[6]
+set_location_assignment PIN_AD30 -to SW[7]
+set_location_assignment PIN_AC29 -to SW[8]
+set_location_assignment PIN_AA30 -to SW[9]
+
+#============================================================
+# LED
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[9]
+set_location_assignment PIN_AA24 -to LEDR[0]
+set_location_assignment PIN_AB23 -to LEDR[1]
+set_location_assignment PIN_AC23 -to LEDR[2]
+set_location_assignment PIN_AD24 -to LEDR[3]
+set_location_assignment PIN_AG25 -to LEDR[4]
+set_location_assignment PIN_AF25 -to LEDR[5]
+set_location_assignment PIN_AE24 -to LEDR[6]
+set_location_assignment PIN_AF24 -to LEDR[7]
+set_location_assignment PIN_AB22 -to LEDR[8]
+set_location_assignment PIN_AC22 -to LEDR[9]
+
+#============================================================
+# Seg7
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[6]
+set_location_assignment PIN_W17 -to HEX0[0]
+set_location_assignment PIN_V18 -to HEX0[1]
+set_location_assignment PIN_AG17 -to HEX0[2]
+set_location_assignment PIN_AG16 -to HEX0[3]
+set_location_assignment PIN_AH17 -to HEX0[4]
+set_location_assignment PIN_AG18 -to HEX0[5]
+set_location_assignment PIN_AH18 -to HEX0[6]
+set_location_assignment PIN_AF16 -to HEX1[0]
+set_location_assignment PIN_V16 -to HEX1[1]
+set_location_assignment PIN_AE16 -to HEX1[2]
+set_location_assignment PIN_AD17 -to HEX1[3]
+set_location_assignment PIN_AE18 -to HEX1[4]
+set_location_assignment PIN_AE17 -to HEX1[5]
+set_location_assignment PIN_V17 -to HEX1[6]
+set_location_assignment PIN_AA21 -to HEX2[0]
+set_location_assignment PIN_AB17 -to HEX2[1]
+set_location_assignment PIN_AA18 -to HEX2[2]
+set_location_assignment PIN_Y17 -to HEX2[3]
+set_location_assignment PIN_Y18 -to HEX2[4]
+set_location_assignment PIN_AF18 -to HEX2[5]
+set_location_assignment PIN_W16 -to HEX2[6]
+set_location_assignment PIN_Y19 -to HEX3[0]
+set_location_assignment PIN_W19 -to HEX3[1]
+set_location_assignment PIN_AD19 -to HEX3[2]
+set_location_assignment PIN_AA20 -to HEX3[3]
+set_location_assignment PIN_AC20 -to HEX3[4]
+set_location_assignment PIN_AA19 -to HEX3[5]
+set_location_assignment PIN_AD20 -to HEX3[6]
+set_location_assignment PIN_AD21 -to HEX4[0]
+set_location_assignment PIN_AG22 -to HEX4[1]
+set_location_assignment PIN_AE22 -to HEX4[2]
+set_location_assignment PIN_AE23 -to HEX4[3]
+set_location_assignment PIN_AG23 -to HEX4[4]
+set_location_assignment PIN_AF23 -to HEX4[5]
+set_location_assignment PIN_AH22 -to HEX4[6]
+set_location_assignment PIN_AF21 -to HEX5[0]
+set_location_assignment PIN_AG21 -to HEX5[1]
+set_location_assignment PIN_AF20 -to HEX5[2]
+set_location_assignment PIN_AG20 -to HEX5[3]
+set_location_assignment PIN_AE19 -to HEX5[4]
+set_location_assignment PIN_AF19 -to HEX5[5]
+set_location_assignment PIN_AB21 -to HEX5[6]
+#============================================================
+# SDRAM
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CAS_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CKE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CS_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_LDQM
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_RAS_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_UDQM
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_WE_N
+set_location_assignment PIN_AK14 -to DRAM_ADDR[0]
+set_location_assignment PIN_AH14 -to DRAM_ADDR[1]
+set_location_assignment PIN_AG15 -to DRAM_ADDR[2]
+set_location_assignment PIN_AE14 -to DRAM_ADDR[3]
+set_location_assignment PIN_AB15 -to DRAM_ADDR[4]
+set_location_assignment PIN_AC14 -to DRAM_ADDR[5]
+set_location_assignment PIN_AD14 -to DRAM_ADDR[6]
+set_location_assignment PIN_AF15 -to DRAM_ADDR[7]
+set_location_assignment PIN_AH15 -to DRAM_ADDR[8]
+set_location_assignment PIN_AG13 -to DRAM_ADDR[9]
+set_location_assignment PIN_AG12 -to DRAM_ADDR[10]
+set_location_assignment PIN_AH13 -to DRAM_ADDR[11]
+set_location_assignment PIN_AJ14 -to DRAM_ADDR[12]
+set_location_assignment PIN_AF13 -to DRAM_BA[0]
+set_location_assignment PIN_AJ12 -to DRAM_BA[1]
+set_location_assignment PIN_AF11 -to DRAM_CAS_N
+set_location_assignment PIN_AK13 -to DRAM_CKE
+set_location_assignment PIN_AH12 -to DRAM_CLK
+set_location_assignment PIN_AG11 -to DRAM_CS_N
+set_location_assignment PIN_AK6 -to DRAM_DQ[0]
+set_location_assignment PIN_AJ7 -to DRAM_DQ[1]
+set_location_assignment PIN_AK7 -to DRAM_DQ[2]
+set_location_assignment PIN_AK8 -to DRAM_DQ[3]
+set_location_assignment PIN_AK9 -to DRAM_DQ[4]
+set_location_assignment PIN_AG10 -to DRAM_DQ[5]
+set_location_assignment PIN_AK11 -to DRAM_DQ[6]
+set_location_assignment PIN_AJ11 -to DRAM_DQ[7]
+set_location_assignment PIN_AH10 -to DRAM_DQ[8]
+set_location_assignment PIN_AJ10 -to DRAM_DQ[9]
+set_location_assignment PIN_AJ9 -to DRAM_DQ[10]
+set_location_assignment PIN_AH9 -to DRAM_DQ[11]
+set_location_assignment PIN_AH8 -to DRAM_DQ[12]
+set_location_assignment PIN_AH7 -to DRAM_DQ[13]
+set_location_assignment PIN_AJ6 -to DRAM_DQ[14]
+set_location_assignment PIN_AJ5 -to DRAM_DQ[15]
+set_location_assignment PIN_AB13 -to DRAM_LDQM
+set_location_assignment PIN_AE13 -to DRAM_RAS_N
+set_location_assignment PIN_AK12 -to DRAM_UDQM
+set_location_assignment PIN_AA13 -to DRAM_WE_N
+
+#============================================================
+# VGA
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_BLANK_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_HS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_SYNC_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS
+set_location_assignment PIN_AK22 -to VGA_BLANK_N
+set_location_assignment PIN_AJ21 -to VGA_B[0]
+set_location_assignment PIN_AJ20 -to VGA_B[1]
+set_location_assignment PIN_AH20 -to VGA_B[2]
+set_location_assignment PIN_AJ19 -to VGA_B[3]
+set_location_assignment PIN_AH19 -to VGA_B[4]
+set_location_assignment PIN_AJ17 -to VGA_B[5]
+set_location_assignment PIN_AJ16 -to VGA_B[6]
+set_location_assignment PIN_AK16 -to VGA_B[7]
+set_location_assignment PIN_AK21 -to VGA_CLK
+set_location_assignment PIN_AK26 -to VGA_G[0]
+set_location_assignment PIN_AJ25 -to VGA_G[1]
+set_location_assignment PIN_AH25 -to VGA_G[2]
+set_location_assignment PIN_AK24 -to VGA_G[3]
+set_location_assignment PIN_AJ24 -to VGA_G[4]
+set_location_assignment PIN_AH24 -to VGA_G[5]
+set_location_assignment PIN_AK23 -to VGA_G[6]
+set_location_assignment PIN_AH23 -to VGA_G[7]
+set_location_assignment PIN_AK19 -to VGA_HS
+set_location_assignment PIN_AK29 -to VGA_R[0]
+set_location_assignment PIN_AK28 -to VGA_R[1]
+set_location_assignment PIN_AK27 -to VGA_R[2]
+set_location_assignment PIN_AJ27 -to VGA_R[3]
+set_location_assignment PIN_AH27 -to VGA_R[4]
+set_location_assignment PIN_AF26 -to VGA_R[5]
+set_location_assignment PIN_AG26 -to VGA_R[6]
+set_location_assignment PIN_AJ26 -to VGA_R[7]
+set_location_assignment PIN_AJ22 -to VGA_SYNC_N
+set_location_assignment PIN_AK18 -to VGA_VS
+
+#============================================================
+# GPIO, GPIO connect to D8M-GPIO
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CAMERA_I2C_SCL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CAMERA_I2C_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CAMERA_PWDN_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_CS_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_I2C_SCL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_I2C_SDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_MCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_D[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_HS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_PIXEL_VS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_REFCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MIPI_RESET_n
+set_location_assignment PIN_AE12 -to CAMERA_I2C_SCL
+set_location_assignment PIN_AD7 -to CAMERA_I2C_SDA
+set_location_assignment PIN_AE11 -to CAMERA_PWDN_n
+set_location_assignment PIN_AE7 -to MIPI_CS_n
+set_location_assignment PIN_AD11 -to MIPI_I2C_SCL
+set_location_assignment PIN_AD12 -to MIPI_I2C_SDA
+set_location_assignment PIN_AD9 -to MIPI_MCLK
+
+#set_location_assignment PIN_W15 -to MIPI_PIXEL_CLK
+set_location_assignment PIN_AK2 -to MIPI_PIXEL_CLK
+
+set_location_assignment PIN_AK3 -to MIPI_PIXEL_D[0]
+set_location_assignment PIN_AJ1 -to MIPI_PIXEL_D[1]
+set_location_assignment PIN_AJ2 -to MIPI_PIXEL_D[2]
+set_location_assignment PIN_AH2 -to MIPI_PIXEL_D[3]
+set_location_assignment PIN_AH3 -to MIPI_PIXEL_D[4]
+set_location_assignment PIN_AH4 -to MIPI_PIXEL_D[5]
+set_location_assignment PIN_AH5 -to MIPI_PIXEL_D[6]
+set_location_assignment PIN_AG1 -to MIPI_PIXEL_D[7]
+set_location_assignment PIN_AG2 -to MIPI_PIXEL_D[8]
+set_location_assignment PIN_AG3 -to MIPI_PIXEL_D[9]
+set_location_assignment PIN_AF10 -to MIPI_PIXEL_HS
+set_location_assignment PIN_AF8 -to MIPI_PIXEL_VS
+set_location_assignment PIN_AF5 -to MIPI_REFCLK
+set_location_assignment PIN_AE9 -to MIPI_RESET_n
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+
+
+
+
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE ../signal_tap/auto_focus_1.stp
+set_global_assignment -name PROJECT_IP_REGENERATION_POLICY ALWAYS_REGENERATE_IP
+set_location_assignment PIN_W20 -to IRDA_RXD
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IRDA_RXD
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name SYSTEMVERILOG_FILE PLAYER.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CIRCLE_READ_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CIRCLE_HOUGH_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CIRCLE.sv
+set_global_assignment -name SYSTEMVERILOG_FILE LINE_WRITE_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE LINE_THRESHOLD_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE LINE_READ_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE LINE_PRINT_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE LINE_NMS_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE LINE_HOUGH_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CANNY_DPRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE HOUGH.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SOBEL.sv
+set_global_assignment -name SYSTEMVERILOG_FILE HYSTERESIS.sv
+set_global_assignment -name SYSTEMVERILOG_FILE IMAGE_PROCESSING.sv
+set_global_assignment -name SYSTEMVERILOG_FILE THRESHOLD.sv
+set_global_assignment -name SYSTEMVERILOG_FILE GAUSS.sv
+set_global_assignment -name VERILOG_FILE LCD_COUNTER.v
+set_global_assignment -name SDC_FILE DE10_Standard_D8M_RTL.sdc
+set_global_assignment -name QIP_FILE IP/MIPI_PLL/MIPI_PLL.qip
+set_global_assignment -name SIP_FILE IP/MIPI_PLL/MIPI_PLL.sip
+set_global_assignment -name QIP_FILE IP/SDRAM_PLL/SDRAM_PLL.qip
+set_global_assignment -name SIP_FILE IP/SDRAM_PLL/SDRAM_PLL.sip
+set_global_assignment -name QIP_FILE IP/SDRAM_RD_FIFO/SDRAM_RD_FIFO.qip
+set_global_assignment -name QIP_FILE IP/SDRAM_WR_FIFO/SDRAM_WR_FIFO.qip
+set_global_assignment -name QIP_FILE IP/LINE_BUFFER/LINE_BUFFER.qip
+set_global_assignment -name VERILOG_FILE SDRAM_DATA_PATH.v
+set_global_assignment -name VERILOG_FILE SDRAM_COMMAND.v
+set_global_assignment -name VERILOG_FILE SDRAM_CONTROL_INTERFACE.v
+set_global_assignment -name VERILOG_FILE SDRAM_CONTROL.v
+set_global_assignment -name VERILOG_FILE LINE_BUFFER_ALL.v
+set_global_assignment -name VERILOG_FILE RAW2RGB_BIN.v
+set_global_assignment -name VERILOG_FILE RAW2RGB_ALL.v
+set_global_assignment -name VERILOG_FILE VGA_CONTROLLER.v
+set_global_assignment -name VERILOG_FILE I2C_DELAY.v
+set_global_assignment -name VERILOG_FILE CLK_DIV.v
+set_global_assignment -name VERILOG_FILE VCM_ADJUST.v
+set_global_assignment -name VERILOG_FILE VCM_I2C.v
+set_global_assignment -name VERILOG_FILE VCM_CTRL.v
+set_global_assignment -name VERILOG_FILE MODIFY_SYNC.v
+set_global_assignment -name VERILOG_FILE AUTO_SYNC_MODIFY.v
+set_global_assignment -name VERILOG_FILE AUTO_FOCUS_ENABLE.v
+set_global_assignment -name VERILOG_FILE AUTO_FOCUS_ADJUST.v
+set_global_assignment -name VERILOG_FILE FPS_MONITOR.v
+set_global_assignment -name VERILOG_FILE I2C_WRITE_WDATA.v
+set_global_assignment -name VERILOG_FILE I2C_WRITE_PTR.v
+set_global_assignment -name VERILOG_FILE I2C_RESET_DELAY.v
+set_global_assignment -name VERILOG_FILE I2C_READ_DATA.v
+set_global_assignment -name VERILOG_FILE MIPI_CAMERA_CONFIG.v
+set_global_assignment -name VERILOG_FILE MIPI_BRIDGE_CONFIG.v
+set_global_assignment -name VERILOG_FILE MIPI_BRIDGE_CAMERA_CONFIG.v
+set_global_assignment -name VERILOG_FILE RESET_DELAY_DRAM.v
+set_global_assignment -name VERILOG_FILE IR_SEG_HEX.v
+set_global_assignment -name VERILOG_FILE IR_RX.v
+set_global_assignment -name SOURCE_FILE DE10_Standard_D8M_RTL.qsf
+set_global_assignment -name VERILOG_FILE DE10_Standard_D8M_RTL.v
+set_global_assignment -name QIP_FILE IP/SHIFT_REG_RAM/SHIFT_REG_RAM.qip
+set_global_assignment -name QIP_FILE IP/VGA_PLL/VGA_PLL.qip
+set_global_assignment -name SIP_FILE IP/VGA_PLL/VGA_PLL.sip
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334547" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_PIPELINE=0" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_PIPELINE=0" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_COUNTER_PIPELINE=0" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|clk" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[132] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[133] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[134] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[135] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[136] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[137] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[138] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[139] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[140] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[141] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[142] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[143] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[144] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[145] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[146] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[147] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[148] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[149] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[150] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[151] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[152] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[153] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[154] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[155] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[156] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[157] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[158] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[159] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[160] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[161] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[162] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[163] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[164] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[165] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[166] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[167] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[168] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[169] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[170] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[171] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[172] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[173] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[174] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[175] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[176] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[177] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[178] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[179] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[180] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|latch" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[181] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[182] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[183] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[184] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[185] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[186] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[187] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[188] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[189] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[190] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[191] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[192] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[193] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[194] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[195] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[196] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[197] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[198] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[199] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[200] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[201] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[202] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[203] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[204] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[205] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[206] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[207] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[208] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[209] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[210] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[211] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[212] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[213] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[214] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[215] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[216] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[217] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[218] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[219] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[220] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[221] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[222] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[223] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[224] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[225] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[226] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[227] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[228] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[229] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[230] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[231] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[232] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[233] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[234] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[235] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[236] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[237] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[238] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[239] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[240] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[241] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[242] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[243] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[244] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[245] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[246] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[247] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[248] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[249] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[250] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[251] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[252] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[253] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[254] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[255] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[256] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[257] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[258] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[259] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[260] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[261] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[262] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[263] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[264] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[265] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[266] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[267] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[268] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[269] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[270] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[271] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[272] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[273] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[274] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[275] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[276] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[277] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[278] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[279] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[280] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[281] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[282] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[283] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[284] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[285] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[286] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[287] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[288] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[289] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[290] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[291] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[292] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[293] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[294] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[295] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[296] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[297] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[298] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[299] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[300] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[301] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[302] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[303] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[304] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[305] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[306] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[307] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[308] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[309] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[310] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[311] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[312] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[313] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[314] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[315] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[316] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[317] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[318] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[319] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[320] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[321] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[322] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[323] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[324] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[325] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[326] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[327] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[328] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[329] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[330] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[331] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[332] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[333] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[334] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[335] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[336] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[337] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[338] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[339] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[340] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[341] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[342] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[343] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[344] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[345] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[346] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[347] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[348] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[349] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[350] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[351] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[352] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[353] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[354] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[355] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[356] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[357] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[358] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[359] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[360] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[361] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[362] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[363] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[364] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[365] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[366] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[367] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[368] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[369] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[370] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[371] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[372] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[373] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[374] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[375] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[376] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[377] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[378] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[379] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[380] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[381] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[382] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[383] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[384] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[385] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[386] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[387] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[388] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[389] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|reset_n" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_0[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_1[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_2[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_3[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_4[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_5[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_6[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_7[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_8[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_x_9[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_0[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_1[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_2[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_3[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_4[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_5[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[145] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[146] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[147] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[148] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[149] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[150] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[151] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[152] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_6[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[153] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[154] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[155] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[156] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[157] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[158] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[159] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[160] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[161] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_7[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[162] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[163] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[164] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[165] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[166] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[167] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[168] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[169] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[170] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_8[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[171] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[172] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[173] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[174] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[175] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[176] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[177] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[178] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[179] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|circle_y_9[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[180] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|latch" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[181] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[182] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[183] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[184] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[185] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[186] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[187] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[188] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[189] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[190] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_0[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[191] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[192] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[193] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[194] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[195] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[196] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[197] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_10[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[198] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[199] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[200] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[201] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[202] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[203] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[204] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_11[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[205] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[206] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[207] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[208] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[209] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[210] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[211] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_1[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[212] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[213] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[214] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[215] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[216] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[217] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[218] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_2[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[219] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[220] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[221] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[222] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[223] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[224] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[225] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_3[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[226] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[227] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[228] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[229] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[230] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[231] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[232] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_4[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[233] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[234] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[235] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[236] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[237] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[238] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[239] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_5[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[240] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[241] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[242] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[243] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[244] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[245] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[246] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_6[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[247] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[248] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[249] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[250] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[251] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[252] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[253] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_7[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[254] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[255] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[256] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[257] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[258] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[259] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[260] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_8[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[261] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[262] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[263] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[264] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[265] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[266] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[267] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_c_9[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[268] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[269] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[270] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[271] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[272] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_count[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[273] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[274] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[275] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[276] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[277] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[278] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[279] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_0[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[280] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[281] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[282] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[283] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[284] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[285] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[286] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[287] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[288] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[289] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_10[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[290] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[291] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[292] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[293] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[294] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[295] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[296] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[297] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[298] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[299] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_11[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[300] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[301] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[302] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[303] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[304] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[305] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[306] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[307] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[308] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_1[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[309] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[310] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[311] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[312] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[313] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[314] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[315] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[316] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[317] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[318] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_2[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[319] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[320] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[321] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[322] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[323] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[324] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[325] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[326] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[327] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[328] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_3[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[329] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[330] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[331] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[332] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[333] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[334] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[335] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[336] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[337] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[338] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_4[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[339] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[340] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[341] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[342] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[343] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[344] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[345] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[346] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[347] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[348] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_5[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[349] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[350] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[351] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[352] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[353] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[354] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[355] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[356] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[357] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[358] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_6[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[359] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[360] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[361] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[362] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[363] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[364] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[365] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[366] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[367] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[368] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_7[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[369] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[370] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[371] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[372] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[373] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[374] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[375] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[376] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[377] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[378] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_8[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[379] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[0]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[380] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[1]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[381] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[2]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[382] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[3]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[383] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[4]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[384] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[5]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[385] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[6]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[386] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[7]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[387] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[8]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[388] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|line_m_9[9]" -section_id auto_signaltap_19
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[389] -to "AUTO_FOCUS_ADJUST:i_AUTO_FOCUS_ADJUST|PLAYER:i_player|reset_n" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=390" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=390" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=390" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=1193" -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=512" -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_19|gnd -section_id auto_signaltap_19
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_19|vcc -section_id auto_signaltap_19
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=512" -section_id auto_signaltap_19
+set_global_assignment -name SLD_FILE db/auto_focus_1_auto_stripped.stp
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
